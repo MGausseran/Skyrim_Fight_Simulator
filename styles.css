@@ -1,0 +1,254 @@
+body {
+    text-align: center;
+    background-image: url(./images/mountains.webp);
+    /* background-position: center;
+    background-clip: border-box;
+    background-origin: content-box;
+    background-attachment: scroll; */
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel Regular';
+    padding: 0;
+}
+
+.main_title_container {
+    background-image: url(./images/bois_chaud.jpg);
+    background-size: cover;
+    border: solid 1px;
+    margin: 3px 3px 0 3px;
+}
+.main_title_text {
+    font-size: 5vw;
+    font-family: 'Cinzel Medium';
+    color: snow;
+}
+
+.main_container {
+    display: block;
+    width: 70vw;
+    border: solid 20px;
+    border-image: url(./images/pierre_taillee.jpg);
+    border-image-slice: 30;
+    border-image-repeat: repeat;
+    border-image-outset: 0;
+    border-radius: 10px;
+    background-color: hsl(224, 20%, 70%, 0.5);
+    backdrop-filter: blur(3px);
+    box-shadow: inset 10px 10px 5px black, inset -10px -10px 5px black;
+    position: relative;
+    padding: 5px;
+}
+
+.opponents_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    background-image: url(./images/metal2.jpg);
+    background-size: cover;
+    background-position: 5%;
+    margin : 0 3px;
+}
+
+.critical_strike {
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    margin : 0 2px;
+}
+
+.stats {
+    margin: auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.round_counter {
+    font-family: 'Cinzel Bold';
+    font-weight: 900;
+    background-image: url(./images/metal2.jpg);
+    background-size: cover;
+    background-position: 100%;
+    color: white;
+    margin : 0 3px;
+    padding: 3vh;
+    font-size: 2vw;
+    text-shadow: 
+        -1px -1px 0 #000, /* ombre en haut à gauche */
+        1px -1px 0 #000,  /* ombre en haut à droite */
+        -1px 1px 0 #000,  /* ombre en bas à gauche */
+        1px 1px 0 #000;   /* ombre en bas à droite */
+}
+
+.opponent_killed {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin : 0 2px;
+}
+
+.victory {
+    color: white;
+    background-color: goldenrod;
+    padding: 10px;
+    margin : 0 2px;
+}
+
+select option:hover {
+    background-color: #324065;
+}
+
+.fight_button {
+    width: 10vw;
+    font-family: 'Cinzel Medium';
+    font-size: 2vw;
+    font-weight: 600;
+    background-color: #324065;
+    background-image: url(./images/metal2.jpg);
+    background-position: 15%;
+    background-size: cover;
+    border-width: 3px;
+    border-style: solid;
+    border-image-source: url('./images/metal.jpg');
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+    border-image-outset: 0;
+    box-shadow: inset 5px 5px 5px black, inset -5px -5px 5px black;
+    padding: 10px;
+    color: white;
+    margin: 20px 0;
+}
+
+.fight_button:hover {
+    background-color: #324095;
+    cursor: url(images/Steel_Sword_mini.png), auto;
+}
+
+.fight_button_container {
+    background-image: url(./images/bois_chaud.jpg);
+    background-size: cover;
+    background-position: 5%;
+    margin : 0 3px;
+    
+}
+.event_in_fight {
+    /* background-image: url(./images/bois_chaud.jpg);
+    background-size: cover;
+    background-position: 99%; */
+    padding: 20px 0;
+    font-size: 2vw;
+    margin : 0 3px;
+    font-family: 'Cinzel Medium';
+    font-weight: 400;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black, /* ombre en haut à gauche */
+        1px -1px 0 black,  /* ombre en haut à droite */
+        -1px 1px 0 black,  /* ombre en bas à gauche */
+        1px 1px 0 black;   /* ombre en bas à droite */
+}
+
+.health-bar-container {
+    width: 15vw;
+    height: 20px;
+    background-color: #555;
+    border: 2px solid white;
+    margin: auto;
+    position: relative;
+}
+
+.health-bar {
+    height: 100%;
+    background-color: #9c0e0e;
+    transition: width 0.5s ease-in-out;
+}
+
+
+/*Ajout des polices thématiques*/
+@font-face {
+    font-family: 'Skyrim Medium';
+    src: url('./fonts/Typo3-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Skyrim Normal';
+    src: url('./fonts/typo3Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Black';
+    src: url('./fonts/Cinzel-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Bold';
+    src: url('./fonts/Cinzel-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Extra Bold';
+    src: url('./fonts/Cinzel-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Medium';
+    src: url('./fonts/Cinzel-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Regular';
+    src: url('./fonts/Cinzel-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Semi-Bold';
+    src: url('./fonts/Cinzel-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Cinzel';
+    src: url('./fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+} */
+
+
+@media (max-width: 600px) {
+
+    .main_container{
+        width: 65vw;
+    }
+
+    .opponents_columns {
+        display: block;
+    }
+
+    .main_title_text {
+        font-size: 8vw;
+    }
+
+    .fight_button {
+        width: 25vw;
+        margin-top: 3vh
+    }
+}
