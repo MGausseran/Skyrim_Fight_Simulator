@@ -33,6 +33,36 @@ Welcome to the **Skyrim Fight Simulator**, a fun and dynamic project coded entir
 
 ## Installation
 
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/yourusername/skyrim-fight-simulator.git
+1. **Clone this repository**
+
+
+2. **Open the project folder**:
+
+
+3. **Launch the app**:
+
+start index.html in any browser to play the simulator.
+
+## Technologies Used
+
+- **JavaScript**: Core logic, DOM manipulation, and OOP for character and combat mechanics.  
+- **HTML/CSS**: Structure and styling for an engaging UI.  
+- **Audio**: `.mp3` sound effects to enhance user immersion.  
+
+---
+
+## Key Learning Goals
+
+This project was developed to:
+
+- **Refine JavaScript skills**: Practice OOP, DOM manipulation, event listeners, and logic-heavy programming.  
+- **Work on immersive experiences**: Implement sound effects, visuals, and randomization for a game-like feel.  
+- **Strengthen project structure**: Create modular, scalable, and readable code.  
+
+---
+
+## How to Play
+
+1. Choose two characters using the dropdown menus.  
+2. Press the **Fight!** button and watch the battle unfold.  
+3. Read the results as rounds progress and sound effects enhance the tension.  
